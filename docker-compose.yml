@@ -10,8 +10,8 @@ services:
     ports:
       - "8080:8080"
       - "4443:4443"
-    volumes:
-      - webthings-gateway:webthings
+    #volumes:
+    #  - /opt/docker/webthings-gateway:/home/node/.webthings
     # If certain devices are needed, e.g. USB dongles, enable them here.
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
